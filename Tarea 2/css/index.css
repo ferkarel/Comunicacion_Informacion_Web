@@ -1,0 +1,133 @@
+div,
+nav,
+header,
+section,
+footer,
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-toggler {
+    border-color: #ffca2c !important;
+    background-color: #ffca2c !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: #ffca2c !important;
+    color: black !important;
+}
+
+.carousel-indicators  [data-bs-target] {
+    background-color: #000000 !important;
+}
+
+#carouselIndicators .active {
+    background-color: #ffca2c !important;
+}
+
+#carouselIndicators2 .active {
+    background-color: #ffca2c !important;
+}
+
+.round_btn {
+    border-radius: 500px !important;
+}
+
+.carousel-control-prev-icon {
+    left: 0 !important;
+}
+
+.carousel-control-next-icon {
+    right: 0 !important;
+}
+.car_nav, .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffca2c
+}
+
+.car_nav:last-child, .carousel-control-next-icon, .carousel-control-prev-icon {
+    margin-right: 0px
+}
+
+.car_nav i, .carousel-control-next-icon, .carousel-control-prev-icon {
+    line-height: 36px;
+    color: #000000;
+    font-size: 18px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+
+.car_nav:hover, .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+    background-color: #ffca2c
+}
+
+.car_nav:hover i {
+    color: #000000;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    color: #000000 !important;
+}
+
+header, footer {    
+    background-color: #222531 !important;
+}
+
+li a {
+    color: white !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f44033 !important;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer i {
+    color: #ffffff;
+}
+
+footer span {
+    color: #ffffff;
+}
+
+footer svg {
+    fill: #ffca2c;
+}
+
+footer a:hover {
+    background-color: transparent !important;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .posit_query {
+      position:static !important;
+      transform: translate(0 , 0) !important;
+    } 
+  }
