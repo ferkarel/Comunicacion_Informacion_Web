@@ -1,0 +1,87 @@
+div,
+nav,
+header,
+section,
+footer,
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #142030;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.display-1 {
+    font-weight: 700;
+}
+
+a {
+    font-weight: 900;
+    width: 30%;
+}
+
+header {    
+    background-color: #F2FAFF !important;
+    clip-path: polygon(100% 75%, 50% 99%, 0 75%, 0 0, 50% 0%, 100% 0) !important;
+    background-size:cover;
+    background-position: center;
+    background-repeat:revert;
+    background-attachment: fixed;
+    padding: 10%;
+}
+
+footer {    
+    background-color: #F2FAFF !important;
+    clip-path: polygon(100% 25%, 100% 100%, 50% 100%, 0% 100%, 0 25%, 50% 0) !important;
+    background-size:cover;
+    background-position: center;
+    background-repeat:revert;
+    background-attachment: fixed;
+    padding: 10%;
+}
+
+#section1 {
+    background-image: url("../images/banner1.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat:revert;
+    background-attachment: fixed;
+    padding: 10%;
+}
+
+.display-7 {
+    font-size: 2rem;
+}
+
+.back_top {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 75px;
+    height: 50px;
+    z-index: 1;
+  }
+  
+  .back_top:hover, .pop_inf:hover, .logo:hover {
+    background-color: transparent !important;
+  }
+
+
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #ffffff !important;
+}
+
+
+
+
+.opacity {
+    background-color: #000000;
+    opacity: 60%;
+}
+
+
+
+
