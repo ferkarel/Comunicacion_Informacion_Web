@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <title>FerreTodo</title>
+    <link href="images/logo3.png" rel="icon">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/c3a0c05b30.js" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Open+Sans&family=Roboto&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link href="css/sweetAlert.css" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body id="top">
+
+    <header class="header">
+        <div class="py-3 bg_yell text-center">
+            <h4>Horario de Atención: L-V: 7:30 am a 5:00 pm / Sábado: 7:30 am a 3:00 pm</h4>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light py-3 shadow-sm row ms-auto">
+            <div class="container  ps-5">
+                <a data-scroll class="navbar-brand no_hover" href="index.html">
+                    <img src="images/logo3.png" alt="logo FerreTodo" height="120" width="120" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse col-lg-9" id="navbarSupportedContent">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="cotizar.html">Cotizar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="faq.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <a data-scroll id="arrowbtn" class="back_top no_hover" href="#top" title="Go home" onclick="back_top_function()">
+        <img src="images/logo3.png" class="img-fluid" alt="logo que lleva al comienzo de la página">
+    </a>
+
+    <section class="container bg_yell">
+        <div class="text-center py-5">
+            <h2 class="">Hágalo usted mismo</h2>
+            <p>Despierta tu creatividad y haz realidad tus proyectos con nuestra extensa selección de herramientas,
+                materiales y accesorios. Desde pequeñas reparaciones hasta proyectos de renovación, aquí encontrarás
+                todo lo que necesitas para convertir tus ideas en obras maestras.</p>
+        </div>
+    </section>
+
+
+    <section class="py-5 ps-5 pe-5 container">
+        <div class="">
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog1.webp" class="img-fluid rounded-start" alt="muebles con palets">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2">Crea Tus Propios Muebles</h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Cabeceros, jardineras, plateros, sofás... si tienes palets en casa
+                                    que no utilizas puedes crear muebles únicos con ellos.</p>
+                                <a href="https://www.elmueble.com/ideas/diy/como-hacer-sofa-palets-paso-a-paso_41810"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog2.webp" class="img-fluid rounded-start"
+                                alt="mueble pintado con pintura chalk">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2">Renueva con Chalk Paint</h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Y es que la pintura la tiza, o chalk paint, no es solo perfecta
+                                    para transformar tus muebles, también puedes usarla complementos de fibras, como
+                                    este cesto, pantallas de telas de las lámparas, pequeños auxiliares, como un
+                                    taburete... Es la pintura perfecta para darle un toque DIY a toda tu casa. </p>
+                                <p>Para que el cesto te quede perfecto basta con que marques con cinta de carrocero
+                                    hasta donde quieres pintar, limpies la superficie para que la pintura se adhiera
+                                    bien y pintes. ¡Es súper fácil! Ya sabes que puedes aplicar pintura sobre diferentes
+                                    materiales. </p>
+                                <a href="https://www.elmueble.com/decoracion/brico-diy/antes-y-despues-mejores-cambios-chalk-paint_45040"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog3.webp" class="img-fluid rounded-start"
+                                alt="composición de cuadros alineados">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2">Haz Una Composición De Cuadros</h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Si ya hace tiempo que le tenías ganas a esa pared vacía y sin vida
+                                    aprovecha estos días para colgar, al fin, todas esas fotos o ilustraciones que
+                                    tenías guardadas.</p>
+                                <p>Para que una composición de cuadros quede bien los elementos que cuelgues deben tener
+                                    algo en común. Pueden ser los marcos, el tipo de imágenes (todas en blanco y negro),
+                                    el uso de los mismos colores...</p>
+                                <a href="https://www.elmueble.com/ideas/decoterapia/deja-paredes-cuadros-encantara_39995"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog4.webp" class="img-fluid rounded-start"
+                                alt="estantería hecha con cajas">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2"> Haz Una Estantería Con Cajas </h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Las cajas son grandes aliadas para crear el mueble que necesitas.
+                                    Puede seruna librería DIY en el salón, como esta, un zapatero con cajas de madera de
+                                    frutas, un revistero.</p>
+                                <p>Hay muchísimas ideas originales para hacer con cajas de madera. Y si no tienes cajas,
+                                    ya sabes que los grandes centros de bricolaje y también algunas firmas de decoración
+                                    las comercializan en diferentes tamaños, diseños y acabados. Así que no tienes
+                                    excusa.</p>
+                                <a href="https://www.elmueble.com/ideas/decoterapia/ideas-originales-practicas-con-cajas-madera_40920"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog5.webp" class="img-fluid rounded-start"
+                                alt="lampara bohemia hecha a mano">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2"> Crea Una Lámpara Súper Especial </h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Reinterpreta el clásico diseño de las lámparas de pie pero con
+                                    estilo para crear una lámpara que no dejará a nadie indiferente. </p>
+                                <p>Majestuosa y elegante si quieres que sea como esta lámpara necesitarás unos techos
+                                    altos acorde con ella.</p>
+                                <p>Esta se compone de un pie de madera en forma de trípode y una pantalla con cuentas de
+                                    madera. . Aprende cómo hacer esta lámpara de pie paso a paso.</p>
+                                <a href="https://www.elmueble.com/decoracion/brico-diy/como-hacer-lampara-pie-madera-paso-a-paso_46153"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog6.webp" class="img-fluid rounded-start" alt="silla de macramé">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2"> Prueba El Macramé </h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Si lo tuyo son los nudos, puedes decantarte por el macramé. En
+                                    Internet encontrarás mil tutoriales para hacerlo. Puedes empezar por cosas más
+                                    sencillas, como unos farolillos o un perchero. Y cuando ya controles la técnica
+                                    atreverte con una silla de macramé tan bonita como esta. </p>
+                                <p>Lo que necesitarás para hacerla es cordón especial para macramé y dos barras de
+                                    madera con 16 agujeros. Para hacer esta silla los nudos que necesitas controlar son:
+                                    nudo plano, nudo de festón, nudo plano en espiral, nudo doble alternado y nudo
+                                    simple. ¡Ponte a practicar!</p>
+                                <a href="https://www.elmueble.com/decoracion/brico-diy/como-hacer-silla-colgante-macrame_43638"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/blog7.webp" class="img-fluid rounded-start"
+                                alt="alacena forrada con papel tapiz">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-inline-flex justify-content-center">
+                                    <h4 class="card-title pe-2"> Estrena una alacena única </h4>
+                                    <a tabindex="0" class="btn pop_inf p-0" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" data-bs-custom-class="custom-popover"
+                                        data-bs-title="Atención"
+                                        data-bs-content="Este link dirige a un sitio externo y el contenido es patrocinado por la revista El Mueble"><i
+                                            class="fa-solid fa-circle-exclamation txt_red"></i></a>
+                                </div>
+                                <p class="card-text">Puedes usar los restos que tengas de papel pintado para
+                                    personalizar los muebles. Y así pasar de una cómoda de esas que tiene todo el mundo,
+                                    a una personalizada y única. </p>
+                                <p>Para que te quede bien lo más importante es medir bien el frente de los cajones para
+                                    que el papel quede perfecto. Tendrás que quitar los tiradores y encolar bien el
+                                    frente para que quede bien. Ya que estás puedes cambiar los tiradores y hasta forrar
+                                    lo cajones por dentro (con el mismo papel pintado).</p>
+                                <p>En otro tipo de muebles como una alacena, puedes usar el papel pintado para dar una
+                                    nota de contraste y profundidad a su trasera. ¡La actualizarás al instante!</p>
+                                <a href="https://www.elmueble.com/ideas/diy/estrena-una-alacena-unica_40581"
+                                    target="_blank" class="btn btn-dark">Leer más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="row pe-5 ps-5 text-center">
+            <div class="col-lg-4 py-5">
+                <img src="images/logo3.png" alt="logo FerreTodo" height="100" width="100" class="img-fluid">
+                <p class="pt-2">Copyright ©2023.</p>
+                <p>Todos los derechos reservados. <br>FerreTodo</p>
+                <p></p>
+            </div>
+            <div class="col-lg-4 py-5">
+                <h4>Contáctenos</h4>
+                <span class="d-block py-3 ps-5"><i
+                        class="fa-regular fa-envelope fa-xl pe-2"></i>contacto@ferretodo.com</span>
+                <span class="d-block py-2 pe-3"><i class="fa-solid fa-mobile-screen-button fa-xl pe-2"></i>+506
+                    4081-9250</span>
+                <span class="d-block py-3 pe-3"><i class="fa-brands fa-whatsapp fa-xl pe-2"></i>+506 6007-1066</span>
+            </div>
+            <div class="col-lg-4 py-5">
+                <h4>Síguenos</h4>
+                <a href="https://www.facebook.com" class="d-block py-3"><svg width="35" height="35" viewBox="0 0 20 20">
+                        <path
+                            d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z">
+                        </path>
+                    </svg></a>
+
+                <a href="https://www.instagram.com" class="d-block py-2"><svg width="35" height="35"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z">
+                        </path>
+                        <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                        <path
+                            d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z">
+                        </path>
+                    </svg></a>
+
+                <a href="https://www.youtube.com" class="d-block py-3"><svg width="35" height="35" viewBox="0 0 20 20">
+                        <path
+                            d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z">
+                        </path>
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/back_top.js"></script>
+    <script src="js/pop.js"></script>
+
+
+</body>
+
+</html>

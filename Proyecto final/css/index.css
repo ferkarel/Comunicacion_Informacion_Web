@@ -1,0 +1,186 @@
+div,
+nav,
+header,
+section,
+footer,
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.font_family {
+    font-family: Cairo_Play;
+    src: url("fonts/CairoPlay-VariableFont_slnt,wght.ttf");
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Cairo_Play', sans-serif;
+}
+
+.navbar-toggler {
+    border-color: #e5d32b !important;
+    background-color: #e5d32b !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {    
+    background-color: #e5d32b !important;
+    padding: 0.3% !important;
+}
+
+button:hover  {    
+    background-color: #ea2725 !important;
+}
+
+.active {    
+    background-color: #ea2725 !important;
+}
+
+a:hover {
+    background-color: #e5d32b !important;
+    color: black !important;
+}
+
+#promos img {
+    height: calc(100vh);
+}
+
+header,
+footer {
+    background-color: #ffffff !important;
+}
+
+li a {
+    color: #363636 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #820F0D;
+    font-weight:900;
+}
+
+p {
+    color: #363636;
+    font-size: 1.2rem;
+}
+
+footer p {
+    color: #363636;
+}
+
+footer i {
+    color: #363636;
+}
+
+footer span {
+    color: #363636;
+}
+
+footer svg {
+    fill: #ea2725;
+}
+
+footer a:hover {
+    background-color: transparent !important;
+}
+
+.no_hover:hover {
+    background-color: transparent !important;
+}
+
+.txt_yellow {
+    color: #e5d32b !important;
+}
+
+.txt_red {
+    color: #ea2725 !important;
+}
+
+
+.bg_yell {
+    background-color: #e5d32b;
+}
+
+.btn_red {
+    background-color: #ea2725;
+}
+
+.btn-dark {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.btn-dark:hover {
+    background-color: #ea2725 !important;
+    color: #ffffff !important;
+}
+
+.back_top {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 75px;
+    height: 50px;
+    z-index: 1;
+}
+
+
+.padd7 {
+    padding-top: 10%;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e5d32b;
+    color: #000000;
+}
+
+.accordion-button {
+    color: #5c5c5c;
+}
+
+
+
+.space_0 {
+    padding: 0 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 1450px) {
+    .padd7 {
+        padding-top: 20%;
+    }
+
+}
+
+@media (max-width: 1200) {
+    .padd7 {
+        padding-top: 40%;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .padd7 {
+        padding-top: 60%;
+    }
+
+}
+
+@media (max-width: 768) {
+    .padd7 {
+        padding-top: 130%;
+    }
+
+}

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <title>FerreTodo</title>
+    <link href="images/logo3.png" rel="icon">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/c3a0c05b30.js" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Open+Sans&family=Roboto&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link href="css/index.css" rel="stylesheet">
+
+    <link href="css/sweetAlert.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body id="top">
+
+    <header class="header">
+        <div class="py-3 bg_yell text-center">
+            <h5>Horario de Atención: L-V: 7:30 am a 5:00 pm / Sábado: 7:30 am a 3:00 pm</h5>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light py-3 shadow-sm row ms-auto">
+            <div class="container  ps-5">
+                <a data-scroll class="navbar-brand no_hover" href="index.html">
+                    <img src="images/logo3.png" alt="logo FerreTodo" height="120" width="120" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse col-lg-9" id="navbarSupportedContent">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="cotizar.html">Cotizar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="faq.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="container bg_yell">
+        <div class="text-center py-5">
+            <h2 class="">Cotice aquí</h2>
+            <p>Estamos disponibles para solventar todas sus dudas y ponemos a su disposición el siguiente formulario
+                para cotizar los productos que necesita.</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <form class="g-3 needs-validation form-container align-items-center flex-column" novalidate id="citas_form">
+
+            <div class="py-2 w-50 mx-auto">
+                <label for="inp_name">Nombre:</label>
+                <input type="text" class="form-control" id="inp_name" name="inp_name" placeholder="ESCRIBA SU NOMBRE">
+            </div>
+            <div class="py-2 w-50 mx-auto">
+                <label for="inp_last_name">Apellidos</label>
+                <input type="text" class="form-control" id="inp_last_name" name="inp_last_name"
+                    placeholder="ESCRIBA SU APELLIDO">
+            </div>
+
+            <div class="py-2 w-50 mx-auto">
+                <label for="inp_phone">Teléfono:</label>
+                <input type="tel" pattern="^[0-9-+\s()]*$" class="form-control" id="inp_phone" name="inp_phone"
+                    placeholder="ESCRIBA SU TELÉFONO">
+            </div>
+            <div class="py-2 w-50 mx-auto">
+                <label for="inp_email">Correo</label>
+                <input type="email" class="form-control" id="inp_email" name="inp_email"
+                    placeholder="ESCRIBA SU CORREO">
+            </div>
+
+            <div class="py-3 w-50 mx-auto" id="open_comments">
+                <textarea class="form-control" id="free_comments" placeholder="Cómo podemos ayudarle?"
+                    name="free_comments" cols="50" rows="5" maxlength="500" minlength="10" required
+                    spellcheck="true"></textarea>
+            </div>
+
+
+            <div class="form-group py-3 mx-auto text-center" id="term_cond">
+                <div class="form-check">
+                    <label class="form-check-label" for="term_condition">
+                        <a id="term_cond_link" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Aceptar Términos y Condiciones
+                        </a>
+                        <input class="form-check-input" type="checkbox" value="" id="term_condition" required>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Términos y Condiciones</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Usted en su condición de Titular, autoriza expresa, informada y voluntariamente
+                                        a FerreTodo, para
+                                        que recabe y almacene sus datos personales (no sensibles) para si o cualquiera
+                                        de sus subsidiarias,
+                                        filiales o controladoras. Sus datos serán usados para identificarle, ubicarle,
+                                        comunicarle,
+                                        contactarle, enviarle información y/o estadísticas y/o con propósitos de
+                                        análisis por medio de Juke
+                                        Auto o alguno de sus proveedores de servicios. Como titular de la información
+                                        tendrá derecho a
+                                        solicitar el acceso, rectificación, y/o supresión de sus datos así como revocar
+                                        el presente
+                                        consentimiento, mediante solicitud escrita dirigida genéricamente a FerreTodo.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+
+            <div id="submit_form" class="text-center">
+                <button class="btn w-50 btn-dark pt-2" type="button" id="btn_quote">Agendar Cita!</button>
+
+
+            </div>
+
+            <p class="pt-5 text-danger" id="mensajeAlert"></p>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <div class="row pe-5 ps-5 text-center">
+            <div class="col-lg-4 py-5">
+                <img src="images/logo3.png" alt="logo FerreTodo" height="100" width="100" class="img-fluid">
+                <p class="pt-2">Copyright ©2023.</p>
+                <p>Todos los derechos reservados. <br>FerreTodo</p>
+                <p></p>
+            </div>
+            <div class="col-lg-4 py-5">
+                <h4>Contáctenos</h4>
+                <span class="d-block py-3 ps-5"><i
+                        class="fa-regular fa-envelope fa-xl pe-2"></i>contacto@ferretodo.com</span>
+                <span class="d-block py-2 pe-3"><i class="fa-solid fa-mobile-screen-button fa-xl pe-2"></i>+506
+                    4081-9250</span>
+                <span class="d-block py-3 pe-3"><i class="fa-brands fa-whatsapp fa-xl pe-2"></i>+506 6007-1066</span>
+            </div>
+            <div class="col-lg-4 py-5">
+                <h4>Síguenos</h4>
+                <a href="https://www.facebook.com" class="d-block py-3"><svg width="35" height="35" viewBox="0 0 20 20">
+                        <path
+                            d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z">
+                        </path>
+                    </svg></a>
+
+                <a href="https://www.instagram.com" class="d-block py-2"><svg width="35" height="35"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z">
+                        </path>
+                        <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                        <path
+                            d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z">
+                        </path>
+                    </svg></a>
+
+                <a href="https://www.youtube.com" class="d-block py-3"><svg width="35" height="35" viewBox="0 0 20 20">
+                        <path
+                            d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z">
+                        </path>
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/cotizar.js"></script>
+
+
+</body>
+
+</html>
